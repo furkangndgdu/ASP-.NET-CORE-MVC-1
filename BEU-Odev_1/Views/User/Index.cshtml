@@ -1,0 +1,23 @@
+﻿@model IList<User>
+<h1>User List.</h1>
+<table class="table">
+    <tr><th>Id</th>
+        <th>Surname</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Password</th>
+        <th>Active</th>
+        </tr>
+@foreach(var item in Model){
+<tr>
+    <td>@item.Id</td>
+    <td>@item.Name</td>
+    <td>@item.Surname</td>
+    <td>@item.Email</td>
+    <td>@item.Password</td>
+    <td>@item.IsActive</td>
+
+</tr>
+}
+</table>
+}

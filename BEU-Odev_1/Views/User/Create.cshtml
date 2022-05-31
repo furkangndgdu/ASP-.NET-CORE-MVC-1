@@ -1,0 +1,28 @@
+﻿@model User
+<form method="post">
+    <div class="mb-3">
+        <label asp-for="Name"></label>
+        <input type="text" asp-for="Name" class="form-control" />
+    </div>
+     <div class="mb-3">
+        <label asp-for="Surname"></label>
+        <input type="text" asp-for="Surname" class="form-control" />
+    </div>
+     <div class="mb-3">
+        <label asp-for="Email"></label>
+        <input type="email" asp-for="Email" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label asp-for="Password"></label>
+        <input type="password" asp-for="Password" class="form-control" />
+    </div>
+      <div class="mb-3">
+        <label asp-for="IsActive"></label>
+        <input type="checkbox" asp-for="IsActive" class="form-check-input" />
+    </div>
+    
+          <div class="mb-3">
+        <input type="submit" value="Save" class="btn btn-warning" asp-action="Create" />
+        <a asp-controller="User" class="btn btn-info" asp-action="Index">Back to user list</a>
+    </div>
+</form>
